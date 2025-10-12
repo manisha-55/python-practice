@@ -21,3 +21,17 @@ if sorted(a) == sorted(b):
     print("anagrams")
 else:
     print("not")
+
+# Q4: Write a program to remove duplicate characters from a string while preserving the original order.
+s="programming"
+t=''
+for i in s:
+    if i not in t:
+        t+=i
+print(t)
+
+# Q5: Write a program to count the number of words in a sentence.
+a = 'Python is fun'
+split=a.split()
+print(len(split))
+
