@@ -33,4 +33,52 @@ for i in str:
         count=count+1
 print(count)
 
+# Q4: Count Consonants and Vowels Separately
+str = "Python Programming"
+str= str.lower()
+vov=0
+con=0
+vowels='aeiou'
+for i in str:
+    if i.isalpha():
+        if i in vowels:
+            vov+=1
+        else:
+            con+=1
+print("count of vowels:",vov,"\ncount of consonants: ", con)
+
+# Q5: Count Frequency of Each Character
+# Write a program that takes a string and prints the frequency of each character.
+str1 ='banana'
+freq_count = {}
+for i in str1:
+    if i in freq_count:
+        freq_count[i]+=1
+    else:
+        freq_count[i]=1
+print(freq_count)
+
+for i in set(str1):
+    print(i, ":",str1.count(i))
+
+#Q6: Find the Most Frequent Character
+# Write a program to find the character that appears most frequently in a string.
+s= "sucess"
+dict={}
+for i in s:
+    if i in dict:
+        dict[i]+=1
+    else:
+        dict[i]=1
+print(dict)
+max_key=""
+max_value=0
+for k,v in dict.items():
+    if v>max_value:
+        max_value=v
+        max_key=k
+print(max_key)
+
+
+
 
