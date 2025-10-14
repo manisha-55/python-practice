@@ -32,3 +32,14 @@ len= len(n)
 avg= sum/len
 print(avg)
 
+# Problem 2 — Find the Maximum and Minimum Element
+a = [12, 45, 7, 89, 23]
+min=a[0]
+max=a[0]
+for i in a:
+    if(i>max):
+        max=i
+    if(i<min):
+        min=i
+print(max, min)
+
