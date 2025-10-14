@@ -21,3 +21,14 @@ fruits.pop()         # removes last element
 # 5. Loop Through a List
 for f in fruits:
     print(f)
+
+# Problem 1 — Find Sum and Average of List Elements
+n = [10, 20, 30, 40, 50]
+sum=0
+for i in n:
+    sum+=i
+print(sum)
+len= len(n)
+avg= sum/len
+print(avg)
+
