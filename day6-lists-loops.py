@@ -43,3 +43,17 @@ for i in a:
         min=i
 print(max, min)
 
+# Problem 3 — Count Even and Odd Numbers in a List
+a = [12, 45, 7, 89, 23]
+even=0
+odd=0
+for i in a:
+    if i%2==0:
+        even+=1
+    else:
+        odd+=1
+print(even, odd)
+
+# Problem 4 — Reverse a List Without Using reverse()
+numbers = [1, 2, 3, 4, 5]
+print(numbers[::-1])
